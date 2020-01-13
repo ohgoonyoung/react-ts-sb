@@ -3,14 +3,14 @@ import React from 'react';
 interface ILinkProps {
   className?: string;
   href: string;
-  children?: object;
+  //children?: object;
 }
 
 const Link: React.FC<ILinkProps> = ({
   className,
   href,
   children
-}: ILinkProps) => {
+}) => {
   return (
     <a href={href} className={className}>
       {children}

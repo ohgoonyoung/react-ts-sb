@@ -1,5 +1,5 @@
 import * as React from "react";
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Link from 'src/components/Link';
 
 describe('Link', () => {
@@ -12,5 +12,4 @@ describe('Link', () => {
     const link = shallow(<Link href="http://google.com" className="my-link-class">Link to Google</Link>);
     expect(link).toMatchSnapshot();
   });
-
 });
