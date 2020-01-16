@@ -11,7 +11,18 @@ module.exports = ({ config, mode }) => {
       require.resolve('react-docgen-typescript-loader')
     ]
   });
-  config.resolve.extensions.push('.ts', '.tsx');
 
+  config.module.rules.push({
+    test: /\.stories\.tsx?$/,
+    loaders: [
+      {
+        loader: require.resolve('@storybook/source-loader'),
+        options: { parser: 'typescript' },
+      },
+    ],
+    enforce: 'pre',
+  });
+
+  config.resolve.extensions.push('.ts', '.tsx');
   return config;
 };

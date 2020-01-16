@@ -1,0 +1,40 @@
+@import "src/styles/scss/common.scss";
+
+.big {
+  width : 200px;
+}
+.small {
+  width : 100px;
+}
+.button {
+  height : 39px;
+  border-radius: 2;
+}
+
+.primary {
+  background-color:$primary-color;
+  color:$white-color;
+}
+.secondary {
+  background-color:$secondary-color;
+  color:$white-color;
+}
+
+.brownishGrey {
+  background-color:$brownishGrey-color;
+  color:$white-color;
+}
+
+.bordered {
+  background-color:$white-color !important;
+  color:$black-color;
+  &.primary {
+    border : 1px solid $primary-color !important;
+  }
+  &.secondary {
+    border : 1px solid $secondary-color !important;
+  }
+  &.brownishGrey {
+    border : 1px solid $brownishGrey-color !important;
+  }
+}

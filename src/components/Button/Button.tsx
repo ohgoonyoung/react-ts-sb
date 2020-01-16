@@ -1,20 +1,24 @@
 import * as React from 'react';
-import './Button.css';
+import defaultStyle from './Button.module.scss';
+import cn from 'classnames';
 
-type sizeType = "big" | "small";
+type SizeTypes = "big" | "small";
+type colorTypes = "default" | "primary" | "secondary" | "brownishGrey"
 
-interface IButton {
-  size : sizeType;
+interface IProps {
+  size: SizeTypes;
+  color: colorTypes;
+  bordered?: boolean;
 }
 
-function Button({size} : IButton) {
+const Button: React.FC<IProps> = ({ size, color, bordered, children }) => {
   return (
-            <button className={size === "big" ? "button big" : "button small"}>{size === "big" ? "큰" : "작은"} 버튼</button>
+    <button className={cn(defaultStyle.button, defaultStyle[size], bordered ? defaultStyle.bordered : null, defaultStyle[color])}>{children}</button>
   );
 }
 
 Button.defaultProps = {
-  size : "big"
+  size: "big"
 };
 
 export default Button;
