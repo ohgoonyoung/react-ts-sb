@@ -5,7 +5,7 @@
 
 ## contributor 
 - LeeHaeHun
-
+- Kokyounghwan
 
 ## 개발 환경
 - typescript
