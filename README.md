@@ -3,6 +3,10 @@
 - github url : https://github.com/wmonk/create-react-app-typescript
 - 참고 url : https://create-react-app.dev/docs/adding-typescript/
 
+## contributor 
+- LeeHaeHun
+- Kokyounghwan
+
 ## 개발 환경
 - typescript
 - react
