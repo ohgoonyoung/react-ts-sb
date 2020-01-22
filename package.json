@@ -22,7 +22,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,16 +46,19 @@
     "@babel/core": "^7.7.7",
     "@storybook/addon-storysource": "^5.3.4",
     "@storybook/react": "^5.2.8",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@types/enzyme": "^3.10.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "babel-loader": "^8.0.6",
     "babel-preset-react-app": "^9.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0",
     "react-docgen-typescript-loader": "^3.6.0",
     "sass-loader": "^8.0.2",
     "ts-jest": "^24.3.0",
     "tslint-config-prettier": "^1.18.0"
-  }
+  },
+  "homepage": "https://ohgoonyoung.github.io/react-ts-sb/"
 }

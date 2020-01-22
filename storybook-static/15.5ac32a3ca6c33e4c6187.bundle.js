@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{667:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/icon_menu.2afb9e92.png"}}]);
-//# sourceMappingURL=15.5ac32a3ca6c33e4c6187.bundle.js.map
