@@ -1,4 +1,4 @@
-type IconNameTypes =
+export type IconNameType =
   | 'home'
   | 'search'
   | 'alarm'
@@ -17,7 +17,7 @@ type IconNameTypes =
   | 'star'
   | 'user';
 
-let IconNameData: IconNameTypes[] = [
+let IconNameData: IconNameType[] = [
   'home',
   'search',
   'alarm',
@@ -37,4 +37,4 @@ let IconNameData: IconNameTypes[] = [
   'user',
 ];
 
-export { IconNameTypes, IconNameData };
+export { IconNameData };

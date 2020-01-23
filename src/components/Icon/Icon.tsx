@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { IconNameTypes } from './IconTypes';
+import { IconNameType } from './IconTypes';
 
 interface IProps {
-  name: IconNameTypes;
+  name: IconNameType;
   isLabel?: boolean;
   style: React.CSSProperties;
 }

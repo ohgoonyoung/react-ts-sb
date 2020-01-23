@@ -2,9 +2,9 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import Icon from './index';
-import { IconNameData, IconNameTypes } from './IconTypes';
+import { IconNameData, IconNameType } from './IconTypes';
 
-const CustomIcon = (name: IconNameTypes) => {
+const CustomIcon = (name: IconNameType) => {
   return (
     <div style={{ padding: 10, width: 100, height: 50 }}>
       <Icon name={name} isLabel style={{ width: 20, height: 20 }} />
